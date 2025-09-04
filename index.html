@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Portfolio | Besong Fleurette</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#001F3F',
+                        gold: '#FFD700',
+                        lightgold: '#FFF9E6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 24px;
+            height: calc(100% - 24px);
+            width: 2px;
+            background: #E5E7EB;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .contact-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 31, 63, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-navy text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold tracking-tight">
+                    <span class="text-gold">B</span>esong<span class="text-gold">F</span>leurette
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-gold transition">About</a>
+                    <a href="#skills" class="hover:text-gold transition">Skills</a>
+                    <a href="#experience" class="hover:text-gold transition">Experience</a>
+                    <a href="#education" class="hover:text-gold transition">Education</a>
+                    <a href="#contact" class="hover:text-gold transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="text-white"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-navy to-blue-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Strategic Financial Expertise</h1>
+                <p class="text-xl mb-8 text-gray-300" data-aos="fade-up" data-aos-delay="100">Delivering data-driven financial solutions with precision and innovation</p>
+                <div class="flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#contact" class="bg-gold hover:bg-yellow-600 text-navy font-semibold px-6 py-3 rounded-md transition">Get in Touch</a>
+                    <a href="#experience" class="border border-white hover:bg-white hover:text-navy font-semibold px-6 py-3 rounded-md transition">View Experience</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0" data-aos="fade-right">
+                    <div class="relative">
+                        <img src="https://raw.githubusercontent.com/Parth420/portfolio_1/71e741329f5f8c23dde4defc22c41427136e0678/b668a50c-ff9b-436c-867e-d7178ad07de4_removalai_preview.png" alt="Profile" class="rounded-lg shadow-xl w-full">
+
+                        <div class="absolute -bottom-4 -right-4 bg-gold p-4 rounded-lg shadow-lg">
+                            <i data-feather="award" class="text-navy w-8 h-8"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-16" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-navy mb-6">About Me</h2>
+                    <p class="text-lg text-gray-700 mb-6">Results-oriented Accounting and Finance professional with 4+ years experience in donor-funded project finance, financial compliance, and record reconciliation. Skilled in analyzing and recording transactions, preparing tax records, and ensuring 100% documentation accuracy. FMVA® certified, with strong Excel skills and a growing interest in fintech, digital payments, and financial innovation. Adept at working in fast-paced environments while maintaining high attention to detail and regulatory compliance.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i data-feather="briefcase" class="text-gold mr-3"></i>
+                            <span>4+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="globe" class="text-gold mr-3"></i>
+                            <span>Global Market Expertise</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="bar-chart-2" class="text-gold mr-3"></i>
+                            <span>FMVA Certified</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="dollar-sign" class="text-gold mr-3"></i>
+                            <span>Financial Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-4" data-aos="fade-up">Professional Skills</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Specialized expertise across financial domains with a focus on quantitative analysis and strategic decision-making</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300" data-aos="fade-up">
+                    <div class="text-gold mb-4">
+                        <i data-feather="trending-up" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy mb-2">Financial Operations</h3>
+                    <p class="text-gray-600">Ledger management, reconciliation, journaling, fixed asset management</p>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-gold mb-4">
+                        <i data-feather="pie-chart" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy mb-2">Technical Skills</h3>
+                    <p class="text-gray-600">Microsoft Excel, Word, Power Point, Financial Modeling, Smobilpay familiary(Concept), document management</p>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-gold mb-4">
+                        <i data-feather="database" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy mb-2">Grants & Project Accounting</h3>
+                    <p class="text-gray-600">Donor compliance, budget monitoring, cost analysis, invoicing and billing management</p>
+                </div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-gold mb-4">
+                        <i data-feather="dollar-sign" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-navy mb-2">Stakeholder Engagement</h3>
+                    <p class="text-gray-600">Client service, cross-team collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-4" data-aos="fade-up">Professional Experience</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Proven track record of delivering financial solutions at leading institutions</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item mb-12 pl-8 relative" data-aos="fade-up">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-gold border-4 border-lightgold"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-navy">Field Finance Assistant</h3>
+                                <span class="bg-gold text-navy text-sm font-medium px-3 py-1 rounded-full">02/2025 - Present</span>
+                            </div>
+                            <h4 class="text-lg text-gray-700 mb-3">Global Health Systems Solutions</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Manage verification of financial documents for a MasterCard Foundation-funded youth empowerment program.</li>
+                                <li>Reconcile training center payments, stipends, and supplier invoices against approved budgets.</li>
+                                <li>Maintain physical and electronic filing of all finance records for donor audit readiness.</li>
+                                <li>Support monthly financial reporting and compliance checks with internal CQI standards.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item mb-12 pl-8 relative" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-gold border-4 border-lightgold"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-navy">Finance Clerk</h3>
+                                <span class="bg-gold text-navy text-sm font-medium px-3 py-1 rounded-full">02/2020 - 01/2025</span>
+                            </div>
+                            <h4 class="text-lg text-gray-700 mb-3">Cameroon Baptist Convention Health Services</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Processed transactions, reconciled accounts, and prepared donor financial reports for healthcare projects, including HIV-Free and IDP support initiatives funded by PEPFAR.</li>
+                                <li>Ensured accurate expense documentation and supported monthly financial closures.</li>
+                                <li>Maintained strict confidentiality of sensitive financial and patient records.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item pl-8 relative" data-aos="fade-up" data-aos-delay="200">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-gold border-4 border-lightgold"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold text-navy">Investment Associate</h3>
+                                <span class="bg-gold text-navy text-sm font-medium px-3 py-1 rounded-full">2013 - 2016</span>
+                            </div>
+                            <h4 class="text-lg text-gray-700 mb-3">Horizon Wealth Management</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Assisted in managing client portfolios totaling $50M in assets</li>
+                                <li>Developed client financial plans and investment strategies</li>
+                                <li>Created market research reports and economic forecasts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-4" data-aos="fade-up">Education & Certifications</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Academic background and professional qualifications</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Education -->
+                <div data-aos="fade-right">
+                    <h3 class="text-xl font-semibold text-navy mb-6 pb-2 border-b border-gray-200">Education</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="text-lg font-medium text-navy">MBA in Finance</h4>
+                                <span class="text-sm text-gray-500">2015</span>
+                            </div>
+                            <p class="text-gray-600">Wharton School, University of Pennsylvania</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="text-lg font-medium text-navy">BSc in Economics</h4>
+                                <span class="text-sm text-gray-500">2011</span>
+                            </div>
+                            <p class="text-gray-600">New York University, Stern School of Business</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div data-aos="fade-left">
+                    <h3 class="text-xl font-semibold text-navy mb-6 pb-2 border-b border-gray-200">Certifications</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="flex items-start">
+                                <div class="bg-gold p-2 rounded mr-4">
+                                    <i data-feather="award" class="text-navy w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-navy mb-1">Chartered Financial Analyst (CFA)</h4>
+                                    <p class="text-gray-600 text-sm">CFA Institute - 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="flex items-start">
+                                <div class="bg-gold p-2 rounded mr-4">
+                                    <i data-feather="award" class="text-navy w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-navy mb-1">Financial Risk Manager (FRM)</h4>
+                                    <p class="text-gray-600 text-sm">GARP - 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="flex items-start">
+                                <div class="bg-gold p-2 rounded mr-4">
+                                    <i data-feather="award" class="text-navy w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-navy mb-1">Certified Financial Planner (CFP)</h4>
+                                    <p class="text-gray-600 text-sm">CFP Board - 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-4" data-aos="fade-up">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Let's discuss how I can contribute to your financial objectives</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6" data-aos="fade-up">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-md focus:border-navy">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-md focus:border-navy">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                        <input type="text" id="subject" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-md focus:border-navy">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="message" class="block text-gray-700 mb-2">Message</label>
+                        <textarea id="message" rows="5" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-md focus:border-navy"></textarea>
+                    </div>
+                    <div class="md:col-span-2">
+                        <button type="submit" class="bg-navy hover:bg-blue-900 text-white font-semibold px-8 py-3 rounded-md transition w-full md:w-auto">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-xl font-bold tracking-tight mb-2">
+                        <span class="text-gold">F</span>inance<span class="text-gold">P</span>ro
+                    </div>
+                    <p class="text-gray-300">Strategic financial solutions for growth and stability</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-gold transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-gold transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-gold transition">
+                        <i data-feather="mail"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-gold transition">
+                        <i data-feather="phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 FinancePro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS animation library
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('button[aria-label="Menu"]');
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+
+            menuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
